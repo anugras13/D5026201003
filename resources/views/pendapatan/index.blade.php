@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
-</head>
-<body>
-
-	<h2>www.malasngoding.com</h2>
-	<h3>Data Pendapatan</h3>
+@extends('layout.happy')
+@section('title', 'Data Pendapatan')
+@section('judulhalaman', 'Data Pendapatan Pegawai')
+@section('konten')
 
 	<a href="/pendapatan/tambah"> + Tambah Pendapatan Baru</a>
 
@@ -21,6 +16,7 @@
 			<th>Tahun</th>
 			<th>Gaji</th>
             <th>Tunjangan</th>
+            <th>Opsi</th>
 		</tr>
 		@foreach($pendapatan as $p)
 		<tr>
@@ -38,7 +34,4 @@
 		</tr>
 		@endforeach
 	</table>
-
-
-</body>
-</html>
+@endsection
