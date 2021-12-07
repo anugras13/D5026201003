@@ -25,6 +25,7 @@
             width: 300px;
             transition: all ease-in-out 0.5s;
             padding: 0 15px;
+            box-shadow: -20px 0 35px -25px black, 20px 0 35px -25px black;
             background: #152238;
             overflow-y: auto;
             color: ghostwhite;
@@ -78,6 +79,7 @@
         .gawe {
             font-family: 'Courier New', Courier, monospace;
             font-size: 30px;
+            font-weight: bolder;
         }
         .gowo {
             font-family: 'Courier New', Courier, monospace;
@@ -107,11 +109,11 @@
 
               <nav id="navbar" class="nav-menu navbar">
                 <ul>
-                  <li><a href="/pegawai" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Pegawai</span></a></li>
-                  <li><a href="/absen" class="nav-link scrollto"><i class="bx bx-file-blank"></i>  <span>Absen</span></a></li>
-                  <li><a href="/pendapatan" class="nav-link scrollto"><i class='bx bx-money-withdraw'></i><span>Pendapatan</span></a></li>
-                  <li><a href="" class="nav-link scrollto"><i class='bx bx-calendar-week'></i><span>Minggu Depan</span></a></li>
-                  <li><a href="" class="nav-link scrollto"><i class='bx bx-expand-horizontal'></i><span>Praktikum</span></a></li>
+                  <li><a href="/pegawai"> <span>Pegawai</span></a></li>
+                  <li><a href="/absen"> <span>Absen</span></a></li>
+                  <li><a href="/pendapatan"> <span>Pendapatan</span></a></li>
+                  <li><a href=""> <span>Minggu Depan</span></a></li>
+                  <li><a href=""> <span>Praktikum</span></a></li>
                 </ul>
               </nav>
               <footer class="mrg">
