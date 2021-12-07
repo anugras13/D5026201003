@@ -17,6 +17,7 @@
         </script>
     <style>
         .header {
+            font-family: 'Courier New', Courier, monospace;
             position: fixed;
             top: 0;
             left: 0;
@@ -36,55 +37,65 @@
             border: 8px solid #2c2f3f;
             }
 
-        .nav-menu {
-            padding: 30px 0 0 0;
+        .card {
+            position: absolute;
+            width: 800px;
+            height: 500px;
+            padding: 25px;
+            padding-top: 0;
+            padding-bottom: 0;
+            left: 50%;
+            top: 67.5px;
+            margin-left: -300px;
+            background: #a5afb3;
+            box-shadow: -20px 0 35px -25px black, 20px 0 35px -25px black;
+            z-index: 5;
             }
 
-        .nav-menu * {
-            margin: 0;
+        .card img {
+            width: 150px;
+            float: left;
+            border-radius: 5px;
+            margin-right: 20px;
+            -webkit-filter: sepia(1);
+            -moz-filter: sepia(1);
+            filter: sepia(1);
+            }
+
+        .card h2 {
+            font-family: courier;
+            color: #333;
+            margin: 0 auto;
             padding: 0;
-            list-style: none;
+            font-size: 15pt;
             }
 
-        .nav-menu > ul > li {
-            position: relative;
-            white-space: nowrap;
+        .card p {
+            font-family: courier;
+            color: #555;
+            font-size: 13px;
             }
-
-        .nav-menu a, .nav-menu a:focus {
-            display: flex;
-            align-items: center;
-            color: #a8a9b4;
-            padding: 12px 15px;
-            margin-bottom: 8px;
-            transition: 0.3s;
-            font-size: 15px;
-            }
-
-        .nav-menu a i, .nav-menu a:focus i {
-            font-size: 24px;
-            padding-right: 8px;
-            color: #6f7180;
-            }
-
-        .nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover > a {
-            text-decoration: none;
-            color: #fff;
-            }
-
-        .nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover > a i {
-            color: #149ddd;
-            }
-
+        .gawe {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 30px;
+        }
+        .gowo {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+        .mrg {
+            margin: 5%;
+            margin-top: 140px;
+        }
         </style>
 
 
     </head>
 
     <body>
-            <div class="col-lg-3">
-            <div class="card">
-            <div class="card-body header">
+        <div class="container">
+            <div class="col-lg-4">
+            <div class="header">
 
               <div class="profile text-center">
                 <img src="https://media-exp1.licdn.com/dms/image/C5603AQGPt__9ytE8ow/profile-displayphoto-shrink_400_400/0/1631987777174?e=1644451200&v=beta&t=FVEg7iIf6mJZ9HBK5IYhO0RQYLFajJX3L2JjXlFtP6c" style="width: 50%">
@@ -103,19 +114,29 @@
                   <li><a href="" class="nav-link scrollto"><i class='bx bx-expand-horizontal'></i><span>Praktikum</span></a></li>
                 </ul>
               </nav>
+              <footer class="mrg">
+                <div class="row text-center">
+                <span>&copy; 2021</span>
+                </div>
+                <div class="row text-center">
+                <span>Hak Cipta oleh 5026201003 - Anugra Salaza</span>
             </div>
             </div>
             </div>
 
             <div class="col-lg-6">
-                <div class="card" style="width: 70rem;">
-                    <div class="card-body">
-                        <h3 class="card-title">@yield('judulhalaman')</h3>
+                <h3 class="gawe">@yield('judulhalaman')</h3>
+                <div class="card">
+                    <div class="card-body gowo">
                         @section('konten')
                         @show
+                    </div>
                 </div>
             </div>
-        </div>
+
+
+        </footer>
+    </div>
 
     </body>
 

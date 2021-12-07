@@ -2,15 +2,14 @@
 @section('title', 'Data Pendapatan')
 @section('judulhalaman', 'Data Pendapatan Pegawai')
 @section('konten')
-
+</br>
 	<a href="/pendapatan/tambah"> + Tambah Pendapatan Baru</a>
 
 	<br/>
 	<br/>
 
-	<table border="1">
+	<table class="table table-striped table-hover table-bordered align-middle">
 		<tr>
-
 			<th>IDPegawai</th>
 			<th>Bulan</th>
 			<th>Tahun</th>

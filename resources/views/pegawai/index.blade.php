@@ -7,7 +7,7 @@
 	<br/>
 	<br/>
 
-	<table border="1">
+	<table class="table table-striped table-hover table-bordered align-middle">
 		<tr>
 			<th>Nama</th>
 			<th>Jabatan</th>

@@ -8,9 +8,11 @@
 <form action="/absen/update" method="post">
     {{ csrf_field() }}
     <input type="hidden" name="id" value="{{ $a->ID }}">
-    <div class="card">
-          <div class="card-header ">Form Tambah Data Pegawai</div>
-    <div class="card-body">
+</br>
+</br>
+   Form Edit Data Pegawai
+</br>
+</br>
 
     <div class="container">
 

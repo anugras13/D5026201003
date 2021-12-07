@@ -2,12 +2,14 @@
 @section('title', 'Data Absensi')
 @section('judulhalaman', 'Data Absensi Pegawai')
 @section('konten')
+    <br/>
+
 	<a href="/absen/tambah"> + Tambah Absen Baru</a>
 
 	<br/>
 	<br/>
 
-	<table border="1">
+	<table class="table table-striped table-hover table-bordered align-middle">
 		<tr class="custom-table">
 			<th>ID Pegawai</th>
 			<th>Tanggal</th>
