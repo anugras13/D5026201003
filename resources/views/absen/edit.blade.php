@@ -7,8 +7,7 @@
 @foreach($absen as $a)
 <form action="/absen/update" method="post">
     {{ csrf_field() }}
-    <input type="hidden" name="id" value="{{ $a->ID }}">
-</br>
+    <input type="hidden" name="id" value="{{ $a->ID }}">    
 </br>
    Form Edit Data Pegawai
 </br>

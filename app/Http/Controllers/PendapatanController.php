@@ -37,9 +37,9 @@ class PendapatanController extends Controller
     }
     public function edit($id)
     {
-
+        // mengambil data pegawai berdasarkan id yang dipilih
         $pendapatan = DB::table('pendapatan')->where('id', $id)->get();
-
+        // passing data pegawai yang didapat ke view edit.blade.php
         return view('pendapatan.edit', ['pendapatan' => $pendapatan]);
     }
 

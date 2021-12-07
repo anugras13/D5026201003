@@ -2,6 +2,7 @@
 @section('title', 'Data Pegawai')
 @section('judulhalaman', 'Data Pegawai')
 @section('konten')
+    <br/>
 	<a href="/pegawai/tambah"> + Tambah Pegawai Baru</a>
 
 	<br/>
