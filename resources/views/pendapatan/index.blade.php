@@ -7,10 +7,15 @@
 
 	<br/>
 	<br/>
-
+    <p>Cari Data Pendapatan berdasarkan nama :</p>
+	<form action="/pendapatan/cari" method="GET">
+		<input type="text" name="cari" placeholder="Cari Nama .." value="{{ old('cari') }}">
+		<input class="btn btn-warning" type="submit" value="CARI">
+    </form>
+</br></br>
 	<table class="table table-striped table-hover table-bordered align-middle">
 		<tr>
-			<th>IDPegawai</th>
+			<th>Nama Pegawai</th>
 			<th>Bulan</th>
 			<th>Tahun</th>
 			<th>Gaji</th>
@@ -20,7 +25,7 @@
 		@foreach($pendapatan as $p)
 		<tr>
 
-			<td>{{ $p->idPegawai }}</td>
+			<td>{{ $p->pegawai_nama }}</td>
 			<td>{{ $p->bulan }}</td>
 			<td>{{ $p->tahun }}</td>
             <td>{{ $p->gaji}}</td>
@@ -33,4 +38,5 @@
 		</tr>
 		@endforeach
 	</table>
+    {{ $pendapatan->links() }}
 @endsection

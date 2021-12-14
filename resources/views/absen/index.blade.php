@@ -8,17 +8,23 @@
 
 	<br/>
 	<br/>
-
+    <p>Cari Data Absen Pegawai berdasarkan nama:</p>
+	<form action="/absen/cari" method="GET">
+		<input type="text" name="cari" placeholder="Cari Nama Pegawai .." value="{{ old('cari') }}">
+		<input class="btn btn-warning" type="submit">
+    </form>
+    <br/>
+    <br/>
 	<table class="table table-striped table-hover table-bordered align-middle">
 		<tr class="custom-table">
-			<th>ID Pegawai</th>
+			<th>Nama Pegawai</th>
 			<th>Tanggal</th>
 			<th>Status</th>
 			<th>Opsi</th>
 		</tr>
 		@foreach($absen as $a)
 		<tr>
-			<td>{{ $a->IDPegawai }}</td>
+			<td>{{ $a->pegawai_nama }}</td>
 			<td>{{ $a->Tanggal }}</td>
 			<td>{{ $a->Status }}</td>
 			<td>
@@ -29,4 +35,5 @@
 		</tr>
 		@endforeach
 	</table>
+    {{$absen->links() }}
 @endsection

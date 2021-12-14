@@ -112,8 +112,7 @@
                   <li><a href="/pegawai"> <span>Pegawai</span></a></li>
                   <li><a href="/absen"> <span>Absen</span></a></li>
                   <li><a href="/pendapatan"> <span>Pendapatan</span></a></li>
-                  <li><a href=""> <span>Minggu Depan</span></a></li>
-                  <li><a href=""> <span>Praktikum</span></a></li>
+                  <li><a href="/meja"> <span>Praktikum</span></a></li>
                 </ul>
               </nav>
               <footer class="mrg">

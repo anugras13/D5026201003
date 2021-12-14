@@ -1,9 +1,6 @@
-
    @extends('layout.happy')
-
    @section('title', 'Menambah Absen')
    @section('judulhalaman', 'Menambah Data Absen')
-
    @section('konten')
     <form action="/absen/store" method="post">
         {{ csrf_field() }}
